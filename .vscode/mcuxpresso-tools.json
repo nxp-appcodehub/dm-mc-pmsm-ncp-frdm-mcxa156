@@ -1,0 +1,16 @@
+{
+  "version": "25.3",
+  "toolchainPath": "",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "projectType": "sdk-v2-freestanding",
+  "projectName": "dm-mc-pmsm-ncp-frdm-mcxa156",
+  "sdk": {
+    "path": "",
+    "version": "",
+    "boardId": "frdmmcxa156",
+    "deviceId": "MCXA156",
+    "coreId": "cm33_core0"
+  }
+}

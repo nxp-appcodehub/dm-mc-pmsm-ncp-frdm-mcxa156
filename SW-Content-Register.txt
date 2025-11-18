@@ -1,0 +1,18 @@
+Release Name:           dm-mc-pmsm-ncp-frdm-mcxa156
+Release Version:        1.0
+Outgoing License:       BSD-3-clause
+license in files:       License.txt
+Description:            This application is an example of use PMSM motor control with NCP (Network Coprocessor Unit).
+                        FRDM-MCXA156 uses FRDM-RW612 as connectivity coprocessor to create an access point and enable 
+                        communication with sockets to android app. Also, FRDM-MCXA156 runs motor control.
+Release location:       https://github.com/nxp-appcodehub/dm-mc-pmsm-ncp-frdm-mcxa156
+Origin:                 NXP (BSD-3-clause)
+
+Package Name:           NCP_motor_control.apk
+Release Version:        1.0
+Outgoing License:       BSD-3-clause
+license in files:       Flutter_License.txt
+Description:            Android application for connect with sockets to ncp device for monitor and control pmsm motor.
+Release location:       https://github.com/nxp-appcodehub/dm-mc-pmsm-ncp-frdm-mcxa156
+Origin:                 Flutter v3.38.1 (BSD-3-clause) - https://github.com/flutter/flutter
+
