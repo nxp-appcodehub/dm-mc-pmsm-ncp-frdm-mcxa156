@@ -1,0 +1,42 @@
+{
+  "version": 7,
+  "cmakeMinimumRequired": {
+    "major": 3
+  },
+  "configurePresets": [
+    {
+      "name": "debug",
+      "displayName": "debug",
+      "generator": "Ninja",
+      "binaryDir": "${fileDir}//${presetName}",
+      "toolchainFile": "$env{SdkRootDirPath}/mcuxsdk/cmake/toolchain/armgcc.cmake",
+      "inherits": "debug-env",
+      "cacheVariables": {
+        "APP_DIR": "${fileDir}",
+        "CMAKE_BUILD_TYPE": "debug",
+        "SdkRootDirPath": "$env{SdkRootDirPath}/mcuxsdk",
+        "CONFIG_TOOLCHAIN": "armgcc",
+        "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "$env{binaryDir}",
+        "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "$env{binaryDir}",
+        "CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "$env{binaryDir}",
+        "WEST": "TRUE",
+        "board": "frdmmcxa156",
+        "PrjRootDirPath": "${fileDir}//",
+        "Python3_EXECUTABLE": {
+          "type": "FILEPATH",
+          "value": "$env{ARMGCC_DIR}/../.venv_3_13/Scripts/python.exe"
+        }
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "debug",
+      "displayName": "debug",
+      "configurePreset": "debug"
+    }
+  ],
+  "include": [
+    "mcux_include.json"
+  ]
+}
